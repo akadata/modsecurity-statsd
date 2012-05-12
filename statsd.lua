@@ -23,7 +23,4 @@ function send(data)
 
         udp_sock = socket.udp();
         udp_sock:sendto(send_data, host, port)
-
-        send_data = prefix .. "all:1|c"
-        udp_sock:sendto(send_data, host, port)
 end
